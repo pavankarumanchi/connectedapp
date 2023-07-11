@@ -15,7 +15,7 @@ pipeline {
                  }
                  stage('Deploy to Cloudhub') { 
                    environment {
-                                 client_credentials = credentials('client.credentials')
+                                 client_credentials = credentials('connectedApp.credentials')
                                }
                    steps {
                             bat 'mvn deploy -DmuleDeploy -DmuleVersion=4.4.0 -DconnectedAppClientId=1479c7d2dc004ba4847d513bb2d8cabc -DconnectedAppClientSecret=629e5eC1425a4DC294c34FfB18BE4Ff0 -DworkerType=Micro -Dworkers=1 -Dregion=us-east-1'
