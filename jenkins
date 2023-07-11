@@ -18,7 +18,7 @@ pipeline {
                                  client_credentials = credentials('connectedapp')
                                }
                    steps {
-                            bat 'mvn deploy -DmuleDeploy -DmuleVersion=4.4.0 -DconnectedAppClientId=1479c7d2dc004ba4847d513bb2d8cabc -DconnectedAppClientSecret=629e5eC1425a4DC294c34FfB18BE4Ff0 -DworkerType=Micro -Dworkers=1 -Dregion=us-east-1'
+                            bat 'mvn deploy -DmuleDeploy
                          }
                     }
          }
