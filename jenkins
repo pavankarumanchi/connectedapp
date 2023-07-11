@@ -18,7 +18,7 @@ pipeline {
                                  client_credentials = credentials('connectedapp')
                                }
                    steps {
-                            bat 'mvn deploy -DmuleDeploy -DmuleVersion=4.4.0
+                            bat 'mvn deploy -DmuleDeploy'
                          }
                     }
          }
