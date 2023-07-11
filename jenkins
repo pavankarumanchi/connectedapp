@@ -15,7 +15,7 @@ pipeline {
                  }
                  stage('Deploy to Cloudhub') { 
                    environment {
-                                 ANYPOINT_CREDENTIALS = credentials('platform.credentials')
+                                 ANYPOINT_CREDENTIALS = credentials('connectedapp')
                                }
                    steps {
                             bat 'mvn deploy -DmuleDeploy'
